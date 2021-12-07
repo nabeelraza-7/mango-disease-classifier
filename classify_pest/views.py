@@ -6,3 +6,8 @@ from django.http import HttpResponse
 def index(request):
     return render(request, "classify_pest/index.html")
 
+def about(request):
+    return render(request, "classify_pest/about.html")
+
+def mainpage(request):
+    return render(request, "classify_pest/main.html")
