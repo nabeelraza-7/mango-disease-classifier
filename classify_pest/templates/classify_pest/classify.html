@@ -1,0 +1,26 @@
+{% extends 'classify_pest/base.html' %}
+{% block title %}
+    | Classify Mango Pest
+{% endblock %}
+{% block content %}
+    <center>
+        <h1 class="heading">
+            Mango Pest Classification
+        </h1>
+        <p class="text-white mx-4 my-4 col-6">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Ducimus esse illum tempora quam ipsam maxime voluptatum voluptatibus. 
+            Facere magnam odit, quos consectetur unde laudantium nemo ipsum sapiente 
+            minus aut suscipit voluptate pariatur adipisci ea tenetur dolor hic, 
+            praesentium vitae et. Voluptate nulla reiciendis quia sapiente neque 
+            eveniet impedit iure minima?
+        </p>
+        <div class="file-upload-container ld ld-throw-btt-in">
+            <form enctype="multipart/form-data" method="post" action="#" autocomplete="off">
+                {% csrf_token %}
+                <input class="file-upload-field" type="file" name="image_file" required><br>
+                <center><input type="submit" value="Plot Graph"></center>
+            </form>
+        </div>
+    </center>
+{% endblock %}
