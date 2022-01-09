@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block navs %}
+    <li>
+        <a href="{{ url_for('homepage') }}">Home</a>
+    </li>
+    <li>
+        <a href="{{ url_for('samples') }}">Sample Data</a>
+    </li>
+    <li class="active">
+        <a href="{{ url_for('classify') }}">Classify</a>
+    </li>
+{% endblock %}
+{% block content %}
+    <!-- /////////////////////////////////////////Content -->
+    <div id="page-content" class="container">
+        <div class="row">
+            <div
+                class="disease-box">
+                <!-- <div class="disease-box"> -->
+                <h1>{{ prediction }}</h1>
+                <!-- </div> -->
+                <div>
+                    <a href="{{ url_for('classify') }}" class="btn btn-skin">Predict Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

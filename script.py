@@ -5,22 +5,22 @@ tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 model = tf.keras.models.load_model("model1_v3")
 classes = [
-    'apoderus_javanicus', 
-    'aulacaspis_tubercularis', 
-    'ceroplastes_rubens',
-    'cisaberoptus_kenyae', 
-    'dappula_tertia', 
-    'dialeuropora_decempuncta', 
-    'erosomyia_sp', 
-    'icerya_seychellarum', 
-    'ischnaspis_longirostris', 
-    'mictis_longicornis', 
-    'neomelicharia_sparsa', 
-    'normal', 
-    'orthaga_euadrusalis', 
-    'procontarinia_matteiana', 
-    'procontarinia_rubus', 
-    'valanga_nigricornis'
+    'Apoderus Javanicus', 
+    'Aulacaspis Tubercularis', 
+    'Ceroplastes Rubens',
+    'Cisaberoptus Kenyae', 
+    'Dappula Tertia', 
+    'Dialeuropora Decempuncta', 
+    'Erosomyia Sp', 
+    'Icerya Seychellarum', 
+    'Ischnaspis Longirostris', 
+    'Mictis Longicornis', 
+    'Neomelicharia Sparsa', 
+    'Normal', 
+    'Orthaga Euadrusalis', 
+    'Procontarinia Matteiana', 
+    'Procontarinia Rubus', 
+    'Valanga Nigricornis'
 ]
 
 def predict_class(filename):

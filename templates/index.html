@@ -1,12 +1,88 @@
 {% extends 'base.html' %}
+{% block navs %}
+    <li class="active">
+        <a href="{{ url_for('homepage') }}">Home</a>
+    </li>
+    <li>
+        <a href="{{ url_for('samples') }}">Sample Data</a>
+    </li>
+    <li>
+        <a href="{{ url_for('classify') }}">Classify</a>
+    </li>
+{% endblock %}
 {% block content %}
-<center>
-    <main>
-        <div class="heading">
-            <h1>
-                Mango Pest Classification
-            </h1>
+    <!-- /////////////////////////////////////////Content -->
+    <div id="page-content" class="container">
+        <div
+            class="row">
+            <!-- ////////////Content Box 01 -->
+            <section class="box-content box-1 box-style-0">
+                <div class="flex-box no-gutter">
+                    <div class="col-sm-5">
+                        <div class="box-image">
+                            <img src="static/images/1.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="box-text">
+                            <div class="box-text-inner pd-large-lg pd-small-xs">
+                                <div class="heading">
+                                    <h2>We Are Creative</h2>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.</p>
+
+                                <a class="btn btn-skin m-top30">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ////////////Content Box 02 -->
+            <section class="box-content box-2 box-style-0">
+                <div class="flex-box no-gutter">
+                    <div class="col-sm-5 f-right">
+                        <div class="box-image">
+                            <img src="static/images/3.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="box-text">
+                            <div class="box-text-inner pd-large-lg pd-small-xs t-right">
+                                <div class="heading">
+                                    <h2>We Are Creative</h2>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.</p>
+                                <a class="btn btn-skin m-top30">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ////////////Content Box 03 -->
+            <section class="box-content box-3 box-style-0">
+                <div class="flex-box no-gutter">
+                    <div class="col-sm-5">
+                        <div class="box-image">
+                            <img src="static/images/2.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="box-text">
+                            <div class="box-text-inner pd-large-lg pd-small-xs">
+                                <div class="heading">
+                                    <h2>We Are Creative</h2>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.</p>
+
+                                <a class="btn btn-skin m-top30">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </main>
-</center>
+    </div>
+    <!-- End Content -->
 {% endblock %}

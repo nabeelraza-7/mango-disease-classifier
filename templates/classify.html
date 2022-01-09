@@ -1,26 +1,25 @@
 {% extends 'base.html' %}
-{% block title %}
-    | Classify Mango Pest
+{% block navs %}
+    <li>
+        <a href="{{ url_for('homepage') }}">Home</a>
+    </li>
+    <li>
+        <a href="{{ url_for('samples') }}">Sample Data</a>
+    </li>
+    <li class="active">
+        <a href="{{ url_for('classify') }}">Classify</a>
+    </li>
 {% endblock %}
 {% block content %}
-    <center>
-        <h1 class="heading">
-            Mango Pest Classification
-        </h1>
-        <p class="text-white mx-4 my-4 col-6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Ducimus esse illum tempora quam ipsam maxime voluptatum voluptatibus. 
-            Facere magnam odit, quos consectetur unde laudantium nemo ipsum sapiente 
-            minus aut suscipit voluptate pariatur adipisci ea tenetur dolor hic, 
-            praesentium vitae et. Voluptate nulla reiciendis quia sapiente neque 
-            eveniet impedit iure minima?
-        </p>
-        <div class="file-upload-container ld ld-throw-btt-in">
-            <form enctype="multipart/form-data" method="post" action="#" autocomplete="off">
-                <!-- <input type="file" class="choose" id="filename" name="filename"/> -->
-                <input class="file-upload-field" type="file" id="image_file" name="image_file" required><br>
-                <center><input type="submit" value="Submit"></center>
-            </form>
-        </div>
-    </center>
-{% endblock %}
+    <!-- /////////////////////////////////////////Content -->
+    <div id="page-content" class="container">
+            <div class="form-box" style="display:flex;justify-content:center;align-items:center;">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="input_file" class="form-label">Add the image you want to classify</label>
+                    <input type="file" name="input_file" id="input_file" class="input_file">
+                        <div class="center-btn">
+                            <input type="submit" value="Predict" class="btn btn-skin submit-btn"></div>
+                        </form>
+                    </div>
+                </div>
+        {% endblock %}
